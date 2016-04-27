@@ -169,6 +169,9 @@ implements SearchFragment.SearchCallback ,MyMapFragment.MapsCallback, TypesFragm
 
     public boolean removeTopFragments() {
 
+        //lets get back to main activity
+        mEngagement.startActivity(this, "MainActivity");
+
         List<Fragment> fragments = mManager.getFragments();
         for (Fragment fragment : fragments) {
             if (fragment != null) {
@@ -180,6 +183,7 @@ implements SearchFragment.SearchCallback ,MyMapFragment.MapsCallback, TypesFragm
                 }
             }
         }
+
 
         return false;
     }

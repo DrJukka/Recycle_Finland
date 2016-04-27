@@ -28,9 +28,8 @@ public class EngagementAPI {
     final private String TAG = "EngagementAPI";
     final private Context mContext;
     private final EngagementAgent mAgent;
-    final private String mConnectionString = "ADD_YOUR_VALUE_HERE";
+    final private String mConnectionString = "ADD_YOUR_STRING_IN_HERE";
 
-    private boolean mIsActivityActive = false;
     final private ArrayList<String> mStartedJobs = new ArrayList<>();
 
     public EngagementAPI(Context context){
@@ -55,27 +54,15 @@ public class EngagementAPI {
         for(String name : mStartedJobs){
             mAgent.endJob(name);
         }
+        mAgent.endActivity();
 
-        if(mIsActivityActive){
-            mIsActivityActive = false;
-            mAgent.endActivity();
-        }
+
         Log.d(TAG, "**** Engagement closed : ");
     }
 
     public void startActivity(Activity activity, String name){
-        if(mIsActivityActive){
-            stopActivity();
-        }
-        mIsActivityActive = true;
         Log.d(TAG,"**** Starting  activity : " + name);
         mAgent.startActivity(activity, name, null);
-    }
-
-    public void stopActivity(){
-        mIsActivityActive = false;
-        Log.d(TAG,"**** Stopping activity");
-        mAgent.endActivity();
     }
 
     public void startJob(final String name, final Bundle extras) {
