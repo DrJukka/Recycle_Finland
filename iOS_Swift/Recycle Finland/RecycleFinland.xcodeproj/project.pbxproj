@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB1AB3561CCE611F008C1B55 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1AB3551CCE611F008C1B55 /* libxml2.tbd */; };
+		BB1AB3BC1CCE732E008C1B55 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1AB3BB1CCE732E008C1B55 /* CoreLocation.framework */; };
+		BB1AB3BE1CCE733C008C1B55 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1AB3BD1CCE733C008C1B55 /* CFNetwork.framework */; };
+		BB1AB3C01CCE7345008C1B55 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1AB3BF1CCE7345008C1B55 /* CoreTelephony.framework */; };
+		BB1AB3C21CCE7350008C1B55 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1AB3C11CCE7350008C1B55 /* SystemConfiguration.framework */; };
+		BB1AB3F11CCE7B17008C1B55 /* AEIdfaProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1AB3E81CCE7B17008C1B55 /* AEIdfaProvider.m */; };
+		BB1AB3F21CCE7B17008C1B55 /* libengagement.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1AB3F01CCE7B17008C1B55 /* libengagement.a */; };
+		BB1AB4101CCE7B92008C1B55 /* libreach.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1AB40A1CCE7B92008C1B55 /* libreach.a */; };
+		BB1AB4111CCE7B92008C1B55 /* AEDefaultAnnouncementView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB1AB40C1CCE7B92008C1B55 /* AEDefaultAnnouncementView.xib */; };
+		BB1AB4121CCE7B92008C1B55 /* AEDefaultPollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB1AB40D1CCE7B92008C1B55 /* AEDefaultPollView.xib */; };
+		BB1AB4131CCE7B92008C1B55 /* AENotificationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB1AB40E1CCE7B92008C1B55 /* AENotificationView.xib */; };
+		BB1AB4141CCE7B92008C1B55 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = BB1AB40F1CCE7B92008C1B55 /* close.png */; };
+		BB39C4481C64896D00CAF8E1 /* JLYRestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB39C4471C64896D00CAF8E1 /* JLYRestService.swift */; };
+		BB57EDFD1C637ABE007D8EB8 /* JLYConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB57EDFC1C637ABE007D8EB8 /* JLYConstants.swift */; };
+		BB8135511C689B57008A8C77 /* DetailItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8135501C689B57008A8C77 /* DetailItem.swift */; };
+		BB99C34D1C6361690022B60E /* TypesOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB99C34C1C6361690022B60E /* TypesOverlay.swift */; };
+		BB99C34F1C6361FC0022B60E /* DetailsOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB99C34E1C6361FC0022B60E /* DetailsOverlay.swift */; };
+		BBA5CCBC1CA28963002044D8 /* launchimage.png in Resources */ = {isa = PBXBuildFile; fileRef = BBA5CCBB1CA28963002044D8 /* launchimage.png */; };
+		BBF3164F1C61F1F000003A1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF3164E1C61F1F000003A1B /* AppDelegate.swift */; };
+		BBF316511C61F1F000003A1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF316501C61F1F000003A1B /* ViewController.swift */; };
+		BBF316541C61F1F000003A1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBF316521C61F1F000003A1B /* Main.storyboard */; };
+		BBF316561C61F1F000003A1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBF316551C61F1F000003A1B /* Assets.xcassets */; };
+		BBF316591C61F1F000003A1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBF316571C61F1F000003A1B /* LaunchScreen.storyboard */; };
+		BBF316641C61F1F000003A1B /* Recycle_FinlandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF316631C61F1F000003A1B /* Recycle_FinlandTests.swift */; };
+		BBF3166F1C61F7CD00003A1B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF3166E1C61F7CD00003A1B /* MapKit.framework */; };
+		BBF316731C62096000003A1B /* JLYServiceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF316721C62096000003A1B /* JLYServiceItem.swift */; };
+		BBF7EF1E1C6240290018350D /* AboutOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF7EF1D1C6240290018350D /* AboutOverlay.swift */; };
+		BBFB7B201C624EDD00141B68 /* ProgressCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB7B1F1C624EDD00141B68 /* ProgressCircle.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BBF316601C61F1F000003A1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBF316431C61F1F000003A1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBF3164A1C61F1F000003A1B;
+			remoteInfo = "Recycle Finland";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB1AB3551CCE611F008C1B55 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		BB1AB3801CCE6CD5008C1B55 /* EngagementBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EngagementBridge.h; sourceTree = "<group>"; };
+		BB1AB3BB1CCE732E008C1B55 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BB1AB3BD1CCE733C008C1B55 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		BB1AB3BF1CCE7345008C1B55 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		BB1AB3C11CCE7350008C1B55 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BB1AB3E71CCE7B17008C1B55 /* AEIdfaProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEIdfaProvider.h; sourceTree = "<group>"; };
+		BB1AB3E81CCE7B17008C1B55 /* AEIdfaProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEIdfaProvider.m; sourceTree = "<group>"; };
+		BB1AB3EA1CCE7B17008C1B55 /* AEModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEModule.h; sourceTree = "<group>"; };
+		BB1AB3EB1CCE7B17008C1B55 /* AEPushMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEPushMessage.h; sourceTree = "<group>"; };
+		BB1AB3EC1CCE7B17008C1B55 /* AEStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEStorage.h; sourceTree = "<group>"; };
+		BB1AB3ED1CCE7B17008C1B55 /* EngagementAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EngagementAgent.h; sourceTree = "<group>"; };
+		BB1AB3EE1CCE7B17008C1B55 /* EngagementTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EngagementTableViewController.h; sourceTree = "<group>"; };
+		BB1AB3EF1CCE7B17008C1B55 /* EngagementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EngagementViewController.h; sourceTree = "<group>"; };
+		BB1AB3F01CCE7B17008C1B55 /* libengagement.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libengagement.a; sourceTree = "<group>"; };
+		BB1AB3F51CCE7B92008C1B55 /* AEAnnouncementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEAnnouncementViewController.h; sourceTree = "<group>"; };
+		BB1AB3F61CCE7B92008C1B55 /* AEAutorotateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEAutorotateView.h; sourceTree = "<group>"; };
+		BB1AB3F71CCE7B92008C1B55 /* AEContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEContentViewController.h; sourceTree = "<group>"; };
+		BB1AB3F81CCE7B92008C1B55 /* AEDefaultAnnouncementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEDefaultAnnouncementViewController.h; sourceTree = "<group>"; };
+		BB1AB3F91CCE7B92008C1B55 /* AEDefaultNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEDefaultNotifier.h; sourceTree = "<group>"; };
+		BB1AB3FA1CCE7B92008C1B55 /* AEDefaultPollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEDefaultPollViewController.h; sourceTree = "<group>"; };
+		BB1AB3FB1CCE7B92008C1B55 /* AEInteractiveContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEInteractiveContent.h; sourceTree = "<group>"; };
+		BB1AB3FC1CCE7B92008C1B55 /* AENotificationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AENotificationView.h; sourceTree = "<group>"; };
+		BB1AB3FD1CCE7B92008C1B55 /* AENotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AENotifier.h; sourceTree = "<group>"; };
+		BB1AB3FE1CCE7B92008C1B55 /* AEPollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEPollViewController.h; sourceTree = "<group>"; };
+		BB1AB3FF1CCE7B92008C1B55 /* AEReachAbstractAnnouncement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEReachAbstractAnnouncement.h; sourceTree = "<group>"; };
+		BB1AB4001CCE7B92008C1B55 /* AEReachAnnouncement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEReachAnnouncement.h; sourceTree = "<group>"; };
+		BB1AB4011CCE7B92008C1B55 /* AEReachContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEReachContent.h; sourceTree = "<group>"; };
+		BB1AB4021CCE7B92008C1B55 /* AEReachDataPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEReachDataPush.h; sourceTree = "<group>"; };
+		BB1AB4031CCE7B92008C1B55 /* AEReachDataPushDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEReachDataPushDelegate.h; sourceTree = "<group>"; };
+		BB1AB4041CCE7B92008C1B55 /* AEReachModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEReachModule.h; sourceTree = "<group>"; };
+		BB1AB4051CCE7B92008C1B55 /* AEReachNotifAnnouncement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEReachNotifAnnouncement.h; sourceTree = "<group>"; };
+		BB1AB4061CCE7B92008C1B55 /* AEReachPoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEReachPoll.h; sourceTree = "<group>"; };
+		BB1AB4071CCE7B92008C1B55 /* AEReachPollQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEReachPollQuestion.h; sourceTree = "<group>"; };
+		BB1AB4081CCE7B92008C1B55 /* AEViewControllerUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEViewControllerUtil.h; sourceTree = "<group>"; };
+		BB1AB4091CCE7B92008C1B55 /* AEWebAnnouncementJsBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEWebAnnouncementJsBridge.h; sourceTree = "<group>"; };
+		BB1AB40A1CCE7B92008C1B55 /* libreach.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libreach.a; sourceTree = "<group>"; };
+		BB1AB40C1CCE7B92008C1B55 /* AEDefaultAnnouncementView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AEDefaultAnnouncementView.xib; sourceTree = "<group>"; };
+		BB1AB40D1CCE7B92008C1B55 /* AEDefaultPollView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AEDefaultPollView.xib; sourceTree = "<group>"; };
+		BB1AB40E1CCE7B92008C1B55 /* AENotificationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AENotificationView.xib; sourceTree = "<group>"; };
+		BB1AB40F1CCE7B92008C1B55 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+		BB39C4471C64896D00CAF8E1 /* JLYRestService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLYRestService.swift; sourceTree = "<group>"; };
+		BB57EDFC1C637ABE007D8EB8 /* JLYConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLYConstants.swift; sourceTree = "<group>"; };
+		BB8135501C689B57008A8C77 /* DetailItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailItem.swift; sourceTree = "<group>"; };
+		BB99C34C1C6361690022B60E /* TypesOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypesOverlay.swift; sourceTree = "<group>"; };
+		BB99C34E1C6361FC0022B60E /* DetailsOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsOverlay.swift; sourceTree = "<group>"; };
+		BBA5CCBB1CA28963002044D8 /* launchimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchimage.png; sourceTree = "<group>"; };
+		BBF3164B1C61F1F000003A1B /* RecycleFinland.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecycleFinland.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBF3164E1C61F1F000003A1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BBF316501C61F1F000003A1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BBF316531C61F1F000003A1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BBF316551C61F1F000003A1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BBF316581C61F1F000003A1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BBF3165A1C61F1F000003A1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBF3165F1C61F1F000003A1B /* RecycleFinlandTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecycleFinlandTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBF316631C61F1F000003A1B /* Recycle_FinlandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recycle_FinlandTests.swift; sourceTree = "<group>"; };
+		BBF316651C61F1F000003A1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBF3166E1C61F7CD00003A1B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BBF316721C62096000003A1B /* JLYServiceItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JLYServiceItem.swift; sourceTree = "<group>"; };
+		BBF7EF1D1C6240290018350D /* AboutOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutOverlay.swift; sourceTree = "<group>"; };
+		BBFB7B1F1C624EDD00141B68 /* ProgressCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressCircle.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BBF316481C61F1F000003A1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB1AB3C21CCE7350008C1B55 /* SystemConfiguration.framework in Frameworks */,
+				BB1AB3C01CCE7345008C1B55 /* CoreTelephony.framework in Frameworks */,
+				BB1AB3BE1CCE733C008C1B55 /* CFNetwork.framework in Frameworks */,
+				BB1AB4101CCE7B92008C1B55 /* libreach.a in Frameworks */,
+				BB1AB3BC1CCE732E008C1B55 /* CoreLocation.framework in Frameworks */,
+				BB1AB3F21CCE7B17008C1B55 /* libengagement.a in Frameworks */,
+				BB1AB3561CCE611F008C1B55 /* libxml2.tbd in Frameworks */,
+				BBF3166F1C61F7CD00003A1B /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBF3165C1C61F1F000003A1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB1AB3E51CCE7B17008C1B55 /* EngagementSDK */ = {
+			isa = PBXGroup;
+			children = (
+				BB1AB3E61CCE7B17008C1B55 /* Classes */,
+				BB1AB3E91CCE7B17008C1B55 /* Headers */,
+				BB1AB3F01CCE7B17008C1B55 /* libengagement.a */,
+			);
+			path = EngagementSDK;
+			sourceTree = "<group>";
+		};
+		BB1AB3E61CCE7B17008C1B55 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BB1AB3E71CCE7B17008C1B55 /* AEIdfaProvider.h */,
+				BB1AB3E81CCE7B17008C1B55 /* AEIdfaProvider.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BB1AB3E91CCE7B17008C1B55 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				BB1AB3EA1CCE7B17008C1B55 /* AEModule.h */,
+				BB1AB3EB1CCE7B17008C1B55 /* AEPushMessage.h */,
+				BB1AB3EC1CCE7B17008C1B55 /* AEStorage.h */,
+				BB1AB3ED1CCE7B17008C1B55 /* EngagementAgent.h */,
+				BB1AB3EE1CCE7B17008C1B55 /* EngagementTableViewController.h */,
+				BB1AB3EF1CCE7B17008C1B55 /* EngagementViewController.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		BB1AB3F31CCE7B92008C1B55 /* EngagementReach */ = {
+			isa = PBXGroup;
+			children = (
+				BB1AB3F41CCE7B92008C1B55 /* Headers */,
+				BB1AB40A1CCE7B92008C1B55 /* libreach.a */,
+				BB1AB40B1CCE7B92008C1B55 /* res */,
+			);
+			path = EngagementReach;
+			sourceTree = "<group>";
+		};
+		BB1AB3F41CCE7B92008C1B55 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				BB1AB3F51CCE7B92008C1B55 /* AEAnnouncementViewController.h */,
+				BB1AB3F61CCE7B92008C1B55 /* AEAutorotateView.h */,
+				BB1AB3F71CCE7B92008C1B55 /* AEContentViewController.h */,
+				BB1AB3F81CCE7B92008C1B55 /* AEDefaultAnnouncementViewController.h */,
+				BB1AB3F91CCE7B92008C1B55 /* AEDefaultNotifier.h */,
+				BB1AB3FA1CCE7B92008C1B55 /* AEDefaultPollViewController.h */,
+				BB1AB3FB1CCE7B92008C1B55 /* AEInteractiveContent.h */,
+				BB1AB3FC1CCE7B92008C1B55 /* AENotificationView.h */,
+				BB1AB3FD1CCE7B92008C1B55 /* AENotifier.h */,
+				BB1AB3FE1CCE7B92008C1B55 /* AEPollViewController.h */,
+				BB1AB3FF1CCE7B92008C1B55 /* AEReachAbstractAnnouncement.h */,
+				BB1AB4001CCE7B92008C1B55 /* AEReachAnnouncement.h */,
+				BB1AB4011CCE7B92008C1B55 /* AEReachContent.h */,
+				BB1AB4021CCE7B92008C1B55 /* AEReachDataPush.h */,
+				BB1AB4031CCE7B92008C1B55 /* AEReachDataPushDelegate.h */,
+				BB1AB4041CCE7B92008C1B55 /* AEReachModule.h */,
+				BB1AB4051CCE7B92008C1B55 /* AEReachNotifAnnouncement.h */,
+				BB1AB4061CCE7B92008C1B55 /* AEReachPoll.h */,
+				BB1AB4071CCE7B92008C1B55 /* AEReachPollQuestion.h */,
+				BB1AB4081CCE7B92008C1B55 /* AEViewControllerUtil.h */,
+				BB1AB4091CCE7B92008C1B55 /* AEWebAnnouncementJsBridge.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		BB1AB40B1CCE7B92008C1B55 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				BB1AB40C1CCE7B92008C1B55 /* AEDefaultAnnouncementView.xib */,
+				BB1AB40D1CCE7B92008C1B55 /* AEDefaultPollView.xib */,
+				BB1AB40E1CCE7B92008C1B55 /* AENotificationView.xib */,
+				BB1AB40F1CCE7B92008C1B55 /* close.png */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		BBF316421C61F1F000003A1B = {
+			isa = PBXGroup;
+			children = (
+				BB1AB3F31CCE7B92008C1B55 /* EngagementReach */,
+				BB1AB3E51CCE7B17008C1B55 /* EngagementSDK */,
+				BB1AB3C11CCE7350008C1B55 /* SystemConfiguration.framework */,
+				BB1AB3BF1CCE7345008C1B55 /* CoreTelephony.framework */,
+				BB1AB3BD1CCE733C008C1B55 /* CFNetwork.framework */,
+				BB1AB3BB1CCE732E008C1B55 /* CoreLocation.framework */,
+				BB1AB3551CCE611F008C1B55 /* libxml2.tbd */,
+				BBF3166E1C61F7CD00003A1B /* MapKit.framework */,
+				BBF3164D1C61F1F000003A1B /* Recycle Finland */,
+				BBF316621C61F1F000003A1B /* Recycle FinlandTests */,
+				BBF3164C1C61F1F000003A1B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BBF3164C1C61F1F000003A1B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BBF3164B1C61F1F000003A1B /* RecycleFinland.app */,
+				BBF3165F1C61F1F000003A1B /* RecycleFinlandTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBF3164D1C61F1F000003A1B /* Recycle Finland */ = {
+			isa = PBXGroup;
+			children = (
+				BBA5CCBB1CA28963002044D8 /* launchimage.png */,
+				BBF3164E1C61F1F000003A1B /* AppDelegate.swift */,
+				BBF316501C61F1F000003A1B /* ViewController.swift */,
+				BBF316521C61F1F000003A1B /* Main.storyboard */,
+				BBF316551C61F1F000003A1B /* Assets.xcassets */,
+				BBF316571C61F1F000003A1B /* LaunchScreen.storyboard */,
+				BBF3165A1C61F1F000003A1B /* Info.plist */,
+				BBF316721C62096000003A1B /* JLYServiceItem.swift */,
+				BBF7EF1D1C6240290018350D /* AboutOverlay.swift */,
+				BBFB7B1F1C624EDD00141B68 /* ProgressCircle.swift */,
+				BB99C34C1C6361690022B60E /* TypesOverlay.swift */,
+				BB99C34E1C6361FC0022B60E /* DetailsOverlay.swift */,
+				BB57EDFC1C637ABE007D8EB8 /* JLYConstants.swift */,
+				BB39C4471C64896D00CAF8E1 /* JLYRestService.swift */,
+				BB8135501C689B57008A8C77 /* DetailItem.swift */,
+				BB1AB3801CCE6CD5008C1B55 /* EngagementBridge.h */,
+			);
+			path = "Recycle Finland";
+			sourceTree = "<group>";
+		};
+		BBF316621C61F1F000003A1B /* Recycle FinlandTests */ = {
+			isa = PBXGroup;
+			children = (
+				BBF316631C61F1F000003A1B /* Recycle_FinlandTests.swift */,
+				BBF316651C61F1F000003A1B /* Info.plist */,
+			);
+			path = "Recycle FinlandTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BBF3164A1C61F1F000003A1B /* RecycleFinland */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBF316681C61F1F000003A1B /* Build configuration list for PBXNativeTarget "RecycleFinland" */;
+			buildPhases = (
+				BBF316471C61F1F000003A1B /* Sources */,
+				BBF316481C61F1F000003A1B /* Frameworks */,
+				BBF316491C61F1F000003A1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RecycleFinland;
+			productName = "Recycle Finland";
+			productReference = BBF3164B1C61F1F000003A1B /* RecycleFinland.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BBF3165E1C61F1F000003A1B /* RecycleFinlandTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBF3166B1C61F1F000003A1B /* Build configuration list for PBXNativeTarget "RecycleFinlandTests" */;
+			buildPhases = (
+				BBF3165B1C61F1F000003A1B /* Sources */,
+				BBF3165C1C61F1F000003A1B /* Frameworks */,
+				BBF3165D1C61F1F000003A1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBF316611C61F1F000003A1B /* PBXTargetDependency */,
+			);
+			name = RecycleFinlandTests;
+			productName = "Recycle FinlandTests";
+			productReference = BBF3165F1C61F1F000003A1B /* RecycleFinlandTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BBF316431C61F1F000003A1B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Jukka Silvennoinen";
+				TargetAttributes = {
+					BBF3164A1C61F1F000003A1B = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 8PC556T563;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					BBF3165E1C61F1F000003A1B = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = BBF3164A1C61F1F000003A1B;
+					};
+				};
+			};
+			buildConfigurationList = BBF316461C61F1F000003A1B /* Build configuration list for PBXProject "RecycleFinland" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BBF316421C61F1F000003A1B;
+			productRefGroup = BBF3164C1C61F1F000003A1B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BBF3164A1C61F1F000003A1B /* RecycleFinland */,
+				BBF3165E1C61F1F000003A1B /* RecycleFinlandTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BBF316491C61F1F000003A1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBA5CCBC1CA28963002044D8 /* launchimage.png in Resources */,
+				BB1AB4111CCE7B92008C1B55 /* AEDefaultAnnouncementView.xib in Resources */,
+				BB1AB4141CCE7B92008C1B55 /* close.png in Resources */,
+				BBF316591C61F1F000003A1B /* LaunchScreen.storyboard in Resources */,
+				BB1AB4121CCE7B92008C1B55 /* AEDefaultPollView.xib in Resources */,
+				BB1AB4131CCE7B92008C1B55 /* AENotificationView.xib in Resources */,
+				BBF316561C61F1F000003A1B /* Assets.xcassets in Resources */,
+				BBF316541C61F1F000003A1B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBF3165D1C61F1F000003A1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BBF316471C61F1F000003A1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB8135511C689B57008A8C77 /* DetailItem.swift in Sources */,
+				BBF316511C61F1F000003A1B /* ViewController.swift in Sources */,
+				BB57EDFD1C637ABE007D8EB8 /* JLYConstants.swift in Sources */,
+				BB39C4481C64896D00CAF8E1 /* JLYRestService.swift in Sources */,
+				BBF7EF1E1C6240290018350D /* AboutOverlay.swift in Sources */,
+				BBF316731C62096000003A1B /* JLYServiceItem.swift in Sources */,
+				BB99C34D1C6361690022B60E /* TypesOverlay.swift in Sources */,
+				BB1AB3F11CCE7B17008C1B55 /* AEIdfaProvider.m in Sources */,
+				BBFB7B201C624EDD00141B68 /* ProgressCircle.swift in Sources */,
+				BBF3164F1C61F1F000003A1B /* AppDelegate.swift in Sources */,
+				BB99C34F1C6361FC0022B60E /* DetailsOverlay.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBF3165B1C61F1F000003A1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBF316641C61F1F000003A1B /* Recycle_FinlandTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BBF316611C61F1F000003A1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBF3164A1C61F1F000003A1B /* RecycleFinland */;
+			targetProxy = BBF316601C61F1F000003A1B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BBF316521C61F1F000003A1B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBF316531C61F1F000003A1B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BBF316571C61F1F000003A1B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBF316581C61F1F000003A1B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BBF316661C61F1F000003A1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BBF316671C61F1F000003A1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BBF316691C61F1F000003A1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Recycle Finland/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					/Users/DrJukka/Desktop/mobileengagement/EngagementSDK,
+					"$(PROJECT_DIR)/EngagementSDK",
+					"$(PROJECT_DIR)/EngagementReach",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DrJukka.Recycle-Finland2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "$(SRCROOT)/Recycle Finland/EngagementBridge.h";
+			};
+			name = Debug;
+		};
+		BBF3166A1C61F1F000003A1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Recycle Finland/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					/Users/DrJukka/Desktop/mobileengagement/EngagementSDK,
+					"$(PROJECT_DIR)/EngagementSDK",
+					"$(PROJECT_DIR)/EngagementReach",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DrJukka.Recycle-Finland2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "$(SRCROOT)/Recycle Finland/EngagementBridge.h";
+			};
+			name = Release;
+		};
+		BBF3166C1C61F1F000003A1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Recycle FinlandTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DrJukka.Recycle-FinlandTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecycleFinland.app/RecycleFinland";
+			};
+			name = Debug;
+		};
+		BBF3166D1C61F1F000003A1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Recycle FinlandTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DrJukka.Recycle-FinlandTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecycleFinland.app/RecycleFinland";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BBF316461C61F1F000003A1B /* Build configuration list for PBXProject "RecycleFinland" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBF316661C61F1F000003A1B /* Debug */,
+				BBF316671C61F1F000003A1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBF316681C61F1F000003A1B /* Build configuration list for PBXNativeTarget "RecycleFinland" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBF316691C61F1F000003A1B /* Debug */,
+				BBF3166A1C61F1F000003A1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBF3166B1C61F1F000003A1B /* Build configuration list for PBXNativeTarget "RecycleFinlandTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBF3166C1C61F1F000003A1B /* Debug */,
+				BBF3166D1C61F1F000003A1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BBF316431C61F1F000003A1B /* Project object */;
+}

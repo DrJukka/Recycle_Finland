@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RecycleFinland" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEJ-wn-eCk">
+                                <rect key="frame" x="10" y="20" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="kXj-gS-pdD"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="aboutButtonImage"/>
+                                <connections>
+                                    <action selector="showAboutView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DVw-ae-HxH"/>
+                                </connections>
+                            </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="u8l-TF-Wiq">
+                                <rect key="frame" x="0.0" y="68" width="600" height="532"/>
+                            </mapView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MON-op-mbf">
+                                <rect key="frame" x="58" y="25" width="474" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnE-6w-vCG">
+                                <rect key="frame" x="540" y="20" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="dgG-R5-wxS"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="seachButtonImage"/>
+                                <connections>
+                                    <action selector="searchAddress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Eh-Ye-Eao"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.071736616976622813" green="0.74020369764397898" blue="0.38629665909360367" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="u8l-TF-Wiq" secondAttribute="trailing" id="19g-R1-Vlt"/>
+                            <constraint firstItem="MON-op-mbf" firstAttribute="leading" secondItem="gEJ-wn-eCk" secondAttribute="trailing" constant="8" symbolic="YES" id="4vn-Rb-KiW"/>
+                            <constraint firstItem="gEJ-wn-eCk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="6Jm-rl-E1X"/>
+                            <constraint firstAttribute="bottom" secondItem="u8l-TF-Wiq" secondAttribute="bottom" constant="20" symbolic="YES" id="Avg-FU-fxm"/>
+                            <constraint firstItem="MON-op-mbf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="Bb7-mt-AUC"/>
+                            <constraint firstItem="gnE-6w-vCG" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Oq5-da-zGe"/>
+                            <constraint firstItem="gnE-6w-vCG" firstAttribute="top" secondItem="gEJ-wn-eCk" secondAttribute="top" id="Xu3-v8-q9m"/>
+                            <constraint firstItem="gnE-6w-vCG" firstAttribute="firstBaseline" secondItem="gEJ-wn-eCk" secondAttribute="firstBaseline" id="a6H-Mi-qKp"/>
+                            <constraint firstItem="u8l-TF-Wiq" firstAttribute="top" secondItem="gEJ-wn-eCk" secondAttribute="bottom" constant="8" id="bv8-Hh-c1z"/>
+                            <constraint firstItem="gnE-6w-vCG" firstAttribute="baseline" secondItem="gEJ-wn-eCk" secondAttribute="baseline" id="i5J-RD-dl2"/>
+                            <constraint firstItem="u8l-TF-Wiq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nM7-Xg-7mN"/>
+                            <constraint firstItem="gnE-6w-vCG" firstAttribute="leading" secondItem="MON-op-mbf" secondAttribute="trailing" constant="8" symbolic="YES" id="q83-KC-05u"/>
+                            <constraint firstItem="gEJ-wn-eCk" firstAttribute="centerY" secondItem="MON-op-mbf" secondAttribute="centerY" id="qfT-GI-VZN"/>
+                            <constraint firstItem="gEJ-wn-eCk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-10" id="r0D-80-JAS"/>
+                            <constraint firstItem="gnE-6w-vCG" firstAttribute="bottom" secondItem="gEJ-wn-eCk" secondAttribute="bottom" id="vMp-T4-GuY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="u8l-TF-Wiq" id="Xxh-k5-KdR"/>
+                        <outlet property="searchTextBox" destination="MON-op-mbf" id="LV5-uj-U3v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="567" y="573"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="aboutButtonImage" width="38" height="38"/>
+        <image name="seachButtonImage" width="38" height="38"/>
+    </resources>
+</document>
