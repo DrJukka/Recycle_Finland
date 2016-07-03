@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Grid xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="RecycleFinland.AboutControl" 
+            Opacity="0.8"
+            BackgroundColor="#336699">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="AUTO" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <Button Text="Back" Clicked="BackClicked" x:Name="backFromabout" Grid.Row="0" Margin="5,5,5,5" FontSize="20"/>
+     <Grid Grid.Row="1">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="*" />
+        <RowDefinition Height="AUTO" />
+        <RowDefinition Height="*" />
+      </Grid.RowDefinitions>
+      <StackLayout Grid.Row="1">
+        <Label FontSize="30" XAlign="Center">
+          Recycle Finland
+        </Label>
+        <Label FontSize="20" XAlign="Center" Margin="0,5,0,5">
+          Recycling data provided by JLY (www.jly.fi/), mobile application implemented by Dr.Jukka (www.DrJukka.com), all rights reserved.
+        </Label>
+        <Label FontSize="20" XAlign="Center" Margin="0,5,0,5">
+          Version: 0.50 June 6 2016.
+        </Label>
+      </StackLayout>
+    </Grid>
+  </Grid>

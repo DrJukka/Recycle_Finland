@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RecycleFinland;assembly=RecycleFinland"
+             x:Class="RecycleFinland.MapPage">
+  <ContentPage.Content>
+    <Grid WidthRequest="{x:Static local:App.ScreenWidth}" HeightRequest="{x:Static local:App.ScreenHeight}">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="AUTO" />
+        <RowDefinition Height="AUTO" />
+        <RowDefinition Height="*" />
+      </Grid.RowDefinitions>
+      <Grid x:Class="RecycleFinland.SearchControl" BackgroundColor="Green" Grid.Row="0">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="AUTO" />
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="AUTO" />
+        </Grid.ColumnDefinitions>
+        <Button Grid.Column="0" Clicked="AboutButton_Clicked"
+                Image="../RecycleFinland/Assets/Square44x44Logo.png"   
+                x:Name="aboutButton"
+                   Margin="5,5,5,0" Height="{Binding searchBoxButton.Height}">
+        </Button>
+        <Entry  x:Name="searchBox"
+                Grid.Column="1" Completed="SearchBoxButton_Clicked"
+                Placeholder="Type address for search"
+                FontSize="20" Margin="5,5,5,5">
+        </Entry >
+        <Button Grid.Column="2" x:Name="searchBoxButton" Clicked="SearchBoxButton_Clicked"
+                Image="../RecycleFinland/Assets/search.png"
+                FontSize="20"
+                Margin="0,5,5,5">
+        </Button>
+      </Grid>
+      <ActivityIndicator  x:Name="progressBar" Grid.Row="1" Color="Green" IsRunning="False">
+      </ActivityIndicator>
+      <Grid Grid.Row="2"  >
+        <local:CustomMap x:Name="customMap" MapType="Street"/>
+        <Grid x:Name="buttonGrid" VerticalOptions="Start" HorizontalOptions="Start">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+          </Grid.RowDefinitions>
+          <Button x:Name="openTypesListButton"
+                  Image="../RecycleFinland/Assets/ic_list.png"
+                  Clicked="OpenTypesListButton_Clicked"  Grid.Row="0" Margin="5,5,5,5" FontSize="20"/>
+          <Button x:Name="reFreshListButton" 
+                  Image="../RecycleFinland/Assets/ic_refresh.png"
+                  HorizontalOptions="StartAndExpand" Clicked="ReFreshListButton_Clicked" Grid.Row="1" Margin="5,5,5,5" FontSize="20"/>
+        </Grid>
+        <Grid x:Name="buttonGrid2" VerticalOptions="Start" HorizontalOptions="End">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+          </Grid.RowDefinitions>
+          <Button x:Name="userLocationButton"
+                  Image="../RecycleFinland/Assets/mylocation.png"
+                  IsVisible="False" Clicked="userLocationButton_Clicked"  Grid.Row="0" Margin="5,5,5,5" FontSize="20"/>
+          </Grid>
+      </Grid>
+      <local:AboutControl x:Name="aboutGrid" IsVisible="False"  Grid.Row="0" Grid.RowSpan="3" />
+           
+      <Grid x:Name="typesGrid" IsVisible="False"  Grid.Row="0" Grid.RowSpan="3"
+            Opacity="0.8"
+            BackgroundColor="#336699">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="AUTO" />
+          <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Button Text="Back" Clicked="Back_Clicked" x:Name="backFromtypes" Grid.Row="0" Margin="5,5,5,5" FontSize="20"/>
+        <Grid Grid.Row="1">
+          <ListView x:Name="typesSelectionList" ItemsSource="{x:Static local:MaterialTypeModel.All}">
+            <ListView.ItemTemplate>
+              <DataTemplate>
+                <ViewCell>
+                  <ViewCell.View>
+                    <Label Text="{Binding Name}" Margin="5,5,5,5" XAlign="Center" FontSize="25" />
+                  </ViewCell.View>
+                </ViewCell>
+              </DataTemplate>
+            </ListView.ItemTemplate>
+          </ListView>
+        </Grid>
+      </Grid>
+
+      <Grid x:Name="detailsGrid" IsVisible="False"  Grid.Row="0" Grid.RowSpan="3"
+            Opacity="0.8"
+            BackgroundColor="#336699">
+        <Grid.GestureRecognizers>
+          <PanGestureRecognizer PanUpdated="GridOnPanUpdated" />
+        </Grid.GestureRecognizers>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="AUTO" />
+          <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Button x:Name="backFromdetails" Text="Back" Clicked="Back_Clicked"  Grid.Row="0" Margin="5,5,5,5" FontSize="20"/>
+        <Grid Grid.Row="1" >
+          <Grid.RowDefinitions>
+            <RowDefinition Height="AUTO" />
+            <RowDefinition Height="AUTO" />
+            <RowDefinition Height="AUTO" />
+            <RowDefinition Height="AUTO" />
+            <RowDefinition Height="AUTO" />
+            <RowDefinition Height="AUTO" />
+            <RowDefinition Height="AUTO" />
+            <RowDefinition Height="*" />
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="AUTO" />
+            <ColumnDefinition Width="*" />
+          </Grid.ColumnDefinitions>
+          <Label XAlign="Center" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" x:Name="detailsName" FontSize="30" ></Label>
+          <Label Grid.Row="1" Grid.Column="0" FontSize="20">Contact:</Label>
+          <Label Grid.Row="1" Grid.Column="1" x:Name="detailsContact" FontSize="20" Margin="10,0,0,0" ></Label>
+          <Label Grid.Row="2" Grid.Column="0" FontSize="20">Address</Label>
+          <Label Grid.Row="2" Grid.Column="1" x:Name="detailsAddress" FontSize="20" Margin="10,0,0,0"></Label>
+          <Label Grid.Row="3" Grid.Column="1" x:Name="detailsPCodeCity" FontSize="20" Margin="10,0,0,0"></Label>
+          <Button Grid.Row="4" Grid.Column="1" Text="Navigate to" FontSize="20" Clicked="NavigatetoPlace_Click" Margin="0,0,10,0"></Button>
+          <Label Grid.Row="5" Grid.Column="0" FontSize="20">Open</Label>
+          <Label Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" x:Name="detailsOpenTimes" FontSize="20" Margin="10,0,0,0"></Label>
+          <Label Grid.Row="6" Grid.Column="0" FontSize="20">Types</Label>
+          <ListView Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" x:Name="detailTypes" Margin="10,0,0,0">
+            <ListView.ItemTemplate>
+              <DataTemplate>
+                <ViewCell>
+                  <ViewCell.View>
+                    <Label Text="{Binding Name}" Margin="5,5,5,5" XAlign="Center" FontSize="20" />
+                  </ViewCell.View>
+                </ViewCell>
+              </DataTemplate>
+            </ListView.ItemTemplate>
+          </ListView>
+        </Grid>
+      </Grid>
+    </Grid>
+  </ContentPage.Content>
+</ContentPage>
